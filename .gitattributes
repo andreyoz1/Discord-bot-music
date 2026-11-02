@@ -1,0 +1,3 @@
+# El bot se despliega en Linux: forzar saltos de línea LF aunque se edite en Windows
+* text=auto eol=lf
+*.db binary

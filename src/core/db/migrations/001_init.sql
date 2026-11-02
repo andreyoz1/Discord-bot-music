@@ -1,0 +1,2 @@
+-- Migración inicial: playlists, tracks, playlist_tracks y audit_log.
+-- Pendiente de escribir según la sección 3 de la especificación.

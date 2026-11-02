@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+
+# Secretos
+.env
+
+# Base de datos y copias (solo se versiona la carpeta)
+data/*
+!data/.gitkeep
+!data/backups/
+data/backups/*
+!data/backups/.gitkeep
+
+# Binarios descargados (yt-dlp se descarga en cada máquina)
+bin/*
+!bin/.gitkeep
+
+# Logs y sistema
+logs/
+*.log
+.DS_Store
+Thumbs.db

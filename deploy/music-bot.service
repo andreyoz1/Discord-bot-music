@@ -1,0 +1,2 @@
+# Unidad systemd del bot (pendiente de completar al preparar la VM).
+# Incluirá: usuario sin privilegios, reinicio automático y MemoryMax.

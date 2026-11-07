@@ -15,5 +15,11 @@
     "migrate": "node --env-file=.env scripts/migrate.js",
     "backup": "node --env-file=.env scripts/backup.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "@iamtraction/play-dl": "2.0.1",
+    "better-sqlite3": "^13.0.3",
+    "discord.js": "14.28.0",
+    "pino": "^10.4.0"
+  }
 }

@@ -3,6 +3,8 @@ node_modules/
 
 # Secretos
 .env
+.env.example
+.env.test
 
 # Base de datos y copias (solo se versiona la carpeta)
 data/*

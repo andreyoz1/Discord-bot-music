@@ -3,6 +3,8 @@
  */
 // messageFlags
 import { MessageFlags, SlashCommandBuilder } from 'discord.js';
+import { successEmbed } from '../../utils/embeds.js';
+import { UserError } from '../../utils/errors.js';
 
 
 export default { // export default: cada comando es un objeto con nombre, descripción y función de ejecución
@@ -13,12 +15,13 @@ export default { // export default: cada comando es un objeto con nombre, descri
   level: 'general', // Nivel de permisos: 'general' (cualquiera), 'mod' (moderadores), 'owner' (dueño del bot)
 
   async execute(interaction) {
+
     // ws.ping vale -1 hasta que el gateway mide la primera latencia.
     const ping = interaction.client.ws.ping; //client es el cliente de Discord, ws es la conexión WebSocket, ping es la latencia en ms
     const latency = ping >= 0 ? `${ping} ms` : 'midiendo…';
 
     await interaction.reply({
-      content: `pong, estoy vivo y coleando... guaji es gay · ${latency}`,
+      embeds: [successEmbed(interaction, `pong, estoy vivo y coleando... guaji es gay · ${latency}`)],
       flags: MessageFlags.Ephemeral, // Solo lo ve quien lo escribió
     });
   },
